@@ -17,5 +17,5 @@ whoami
 ```
 **- Find out the hostname**
 ```
-whoami
+hostname
 ```
