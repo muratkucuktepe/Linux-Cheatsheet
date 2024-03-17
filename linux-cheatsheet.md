@@ -23,3 +23,7 @@ hostname
 ```
 strace -e open pwd
 ```
+**- Switch user**
+```
+su -
+```
