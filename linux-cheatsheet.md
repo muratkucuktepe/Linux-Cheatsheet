@@ -19,3 +19,7 @@ whoami
 ```
 hostname
 ```
+**- Check out which command uses which library in /lib**
+```
+strace -e open pwd
+```
