@@ -27,3 +27,8 @@ strace -e open pwd
 ```
 su -
 ```
+**- Change password**
+```
+passwd userid
+passwd          // If you are already logged in with your account und want to change this account.
+```
