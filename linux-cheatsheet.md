@@ -15,20 +15,34 @@ ssh -l <username> <ipaddress>
 ```
 whoami
 ```
+---
 **- Find out the hostname**
 ```
 hostname
 ```
+---
 **- Check out which command uses which library in /lib**
 ```
 strace -e open pwd
 ```
+---
 **- Switch user**
 ```
 su -
 ```
+---
 **- Change password**
 ```
 passwd userid
 passwd          // If you are already logged in with your account und want to change this account.
+```
+---
+**- Listing files**
+```
+ls          // List storage
+ls -l       // List storage long with more information
+ll          // Equivalent of ls -l. It is an alias
+ls -ltr     // List storage in detail but oldes on top, newest on bottom
+ls -a       // Lists all files, including hidden files with a dot. a means all.
+ls -lh      // Lists all files in human readable form. h means human readable. M for MB, K for KB etc.
 ```
