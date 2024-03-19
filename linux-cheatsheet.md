@@ -46,3 +46,21 @@ ls -ltr     // List storage in detail but oldes on top, newest on bottom
 ls -a       // Lists all files, including hidden files with a dot. a means all.
 ls -lh      // Lists all files in human readable form. h means human readable. M for MB, K for KB etc.
 ```
+---
+**- Creating files**
+```
+touch <file-name>                 // Creates new file on current directory
+touch <file-name1> <file-name2>   // Creates multiple files 
+
+vi <file-name>                    // Creates a new file, opens up an editor. Make your changes, save it after :wq!
+```
+---
+**- Creating directories**
+```
+mkdir <directory-name>   // make directory
+```
+---
+**- Copying files**
+```
+cp <source-file-name> <target-file-name>   // Copies source file and creates a target file
+```
