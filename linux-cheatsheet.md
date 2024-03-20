@@ -64,3 +64,8 @@ mkdir <directory-name>   // make directory
 ```
 cp <source-file-name> <target-file-name>   // Copies source file and creates a target file
 ```
+---
+**- Copying directories**
+```
+cp -R <source-file-name> <target-file-name>   // Copies source file and creates a target file. R means recursive
+```
