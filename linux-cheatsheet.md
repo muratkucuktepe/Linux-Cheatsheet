@@ -69,3 +69,13 @@ cp <source-file-name> <target-file-name>   // Copies source file and creates a t
 ```
 cp -R <source-file-name> <target-file-name>   // Copies source file and creates a target file. R means recursive
 ```
+---
+**- Finding files or directories**
+```
+// Find command iterates over files and directories. It is slower but more accurate comparing to locate command
+find . -name "file-name"                              // Finds the files relative to current directory where you are
+find \ -name "file-name"                              // Finds the files with exact path to the root directory
+find \aDirectory\anotherDirectory -name "file-name"   // Finds the files with exact path to the defined directory
+// Uses prebuilt database which should be regularly updated. Faster but not accurate
+locate "file-name"                                    // To update the database use updatedb command   
+```
