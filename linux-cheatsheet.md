@@ -79,3 +79,21 @@ find \aDirectory\anotherDirectory -name "file-name"   // Finds the files with ex
 // Uses prebuilt database which should be regularly updated. Faster but not accurate
 locate "file-name"                                    // To update the database use updatedb command   
 ```
+---
+**- Wildcards**
+```
+* - One or more characters
+? - Single charater
+[] - A range of character (either or)
+\ - Escape character
+^ - The beginning of the line
+$ - The end of the line
+```
+```
+// EXAMPLES:
+rm abc*                // Remove everything starting with abc
+touch abcd{1..9}-xyz   // Creates 9 files like abcd1-xyz abcd2-xyz etc.
+ls -l abc*             // List all the files starting with abc.
+ls -l ?bcd*            // Gives all files with one char at the beginning and many at the end.
+ls -l *[cd]*           // Every file including either c or d
+```
