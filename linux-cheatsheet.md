@@ -42,9 +42,11 @@ passwd          // If you are already logged in with your account und want to ch
 ls          // List storage
 ls -l       // List storage long with more information
 ll          // Equivalent of ls -l. It is an alias
-ls -ltr     // List storage in detail but oldes on top, newest on bottom
+ls -ltr     // List storage in detail but oldest on top, newest on bottom
 ls -a       // Lists all files, including hidden files with a dot. a means all.
 ls -lh      // Lists all files in human readable form. h means human readable. M for MB, K for KB etc.
+ls -li      // i means inode. inode is a pointer or number of file on the hard disk.
+ls -ltri    // This just sorts the files
 ```
 ---
 **- Creating files**
@@ -97,3 +99,16 @@ ls -l abc*             // List all the files starting with abc.
 ls -l ?bcd*            // Gives all files with one char at the beginning and many at the end.
 ls -l *[cd]*           // Every file including either c or d
 ```
+---
+**- Hard and soft links**
+```
+// Navigate to the directory where you want to create soft link
+ln -s /<directory>/<directory>/<soft-link-name>   // s means soft link. Creates a softlink-name here in directory /<directory>/<directory>
+ls /<directory>/<directory>/<hard-link-name>      // Creates a hardlink-name here in directory /<directory>/<directory>
+```
+```
+// Notes: 
+// If you remove original file, the file in hard link stays untouched. On the other hand soft link file will be gone.
+// Hard links only work withing the same partition.
+// You cannot create soft or hard link within the same directory with the same name.
+``
