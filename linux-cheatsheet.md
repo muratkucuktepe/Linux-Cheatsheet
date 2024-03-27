@@ -62,6 +62,12 @@ vi <file-name>                    // Creates a new file, opens up an editor. Mak
 mkdir <directory-name>   // make directory
 ```
 ---
+**- Removing files or directories.**
+```
+rm -f <file-name>        // Remove a file. f means file
+rm -r <directory-namt>   // Remove a directory. r means recursive
+```
+---
 **- Copying files**
 ```
 cp <source-file-name> <target-file-name>   // Copies source file and creates a target file
@@ -111,4 +117,10 @@ ls /<directory>/<directory>/<hard-link-name>      // Creates a hardlink-name her
 // If you remove original file, the file in hard link stays untouched. On the other hand soft link file will be gone.
 // Hard links only work withing the same partition.
 // You cannot create soft or hard link within the same directory with the same name.
-``
+```
+---
+**- Listing commands**
+```
+man -ls   // Lists all commands. man means manual
+// If you press space you will see other pages.
+```
