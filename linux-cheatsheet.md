@@ -124,3 +124,9 @@ ls /<directory>/<directory>/<hard-link-name>      // Creates a hardlink-name her
 man -ls   // Lists all commands. man means manual
 // If you press space you will see other pages.
 ```
+---
+**- List of all packages on Linux**
+```
+dnf list installed
+dnf list installed | grep <package-name>   // Search for a specific package name
+```
