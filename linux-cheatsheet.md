@@ -145,3 +145,7 @@ sudo dnf update
 ```
 sudo dnf install podman   // Install Podman
 ```
+**- Display available network interfaces**
+```
+ip link show
+```
