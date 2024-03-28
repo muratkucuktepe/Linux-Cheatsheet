@@ -127,8 +127,13 @@ man -ls   // Lists all commands. man means manual
 ---
 **- List of all packages on the machine**
 ```
-dnf list installed                         // dnf is package manager
-dnf list installed | grep <package-name>   // Search for a specific package name
+// 1. Way
+dnf list installed                         // dnf is package manager. dnf means dandified YUM
+dnf list installed | grep <package-name>   // Search for a specific package name. Ex: dnf list installed | grep podman
+
+// 2. Way
+rpm -qa                         // rpm is package manager. qa means query all. rpm means Red Hat Package Manager.
+rpm -qa | grep <package-name>   // Search for a specific package name. Ex: rpm -qa | grep podman
 ```
 ---
 **- Update all packages on the machine**
