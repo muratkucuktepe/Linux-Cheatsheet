@@ -125,8 +125,18 @@ man -ls   // Lists all commands. man means manual
 // If you press space you will see other pages.
 ```
 ---
-**- List of all packages on Linux**
+**- List of all packages on the machine**
 ```
-dnf list installed
+dnf list installed                         // dnf is package manager
 dnf list installed | grep <package-name>   // Search for a specific package name
+```
+---
+**- Update all packages on the machine**
+```
+sudo dnf update
+```
+---
+**- Installing podman**
+```
+sudo dnf install podman   // Install Podman
 ```
